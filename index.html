@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Covid-19 Info</title>
+
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 py-3">
+        <h2 class="text-uppercase text-center">Covid-19 Informations</h2>
+        <hr style="width: 110px; text-align: center; border-width: 3px; border-color:#17A2B8">
+
+        <table class="table">
+          <thead class="bg-info text-light">
+            <tr>
+              <th>NewConfirmed</th>
+              <th>TotalCases</th>
+              <th>TotalDeaths</th>
+              <th>TotalRecovered</th>
+            </tr>
+          </thead>
+          <tbody class="bg-dark text-light" id='tbody'>
+
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+
+
+
+
+    <section id="countries_data" class="py-4">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex">
+            <input type="text" name="" placeholder="Search here" id="searchBox" class="form-control">
+            <button class="btn ml-2 btn-info" id="search_btn">Search</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped  my-4 table-hover">
+          <thead class="bg-info text-light">
+            <tr>
+              <th>Countries</th>
+              <th>NewConfirmed</th>
+              <th>NewDeaths</th>
+              <th>NewRecovered</th>
+              <th>TotalConfirmed</th>
+              <th>TotalRecovered</th>
+              <th>TotalDeaths</th>
+            </tr>
+          </thead>
+          <tbody id='all_covid_data'>
+
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+
+
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
